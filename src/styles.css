@@ -1,1 +1,13 @@
 /* Add application styles & imports to this file! */
+
+*{
+  font-family: Courier;
+}
+.container{
+  background-color: gold;
+}
+.topbar{
+color: White;
+background-color: black;
+
+}

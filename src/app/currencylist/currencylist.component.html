@@ -3,16 +3,17 @@
 <h3> Currency List </h3>
 
 <div *ngFor = "let cur of currency">
-<a [title]="cur.Pair + ' details'"
+<h3><a [title]="cur.Pair + ' details'"
 [routerLink] = "['/currency', cur.Id]">
-{{ cur.Pair}} &nbsp; <br>
-</a> 
+{{ cur.Pair}}  <br>
+</a> </h3>
 
 <p *ngIf = "cur.Description">
   {{cur.Description}}
 </p> 
 
- <button type = "button" (click) = "Share()"> Share </button> 
+ <button type = "button" (click) = "Share()" class = "btn btn-primary"> Share </button>
+ <br><br>
  <app-currencyalert [currency] = "cur" (notify) = "onNotify()"></app-currencyalert>
   
 

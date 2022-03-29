@@ -32,6 +32,13 @@ export const currency = [
     Description: "US Dollars to Japanese Yen"
   
     },
+    {
+      Id: 4,
+      Pair: 'USD/INR',
+      Buy_Price: 74,
+      Sell_Price: 78,
+      Descritpion: "US Dollars to Indian Rupee"
+    },
 
   ];
 
