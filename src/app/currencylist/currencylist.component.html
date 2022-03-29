@@ -1,0 +1,19 @@
+
+
+<h3> Currency List </h3>
+
+<div *ngFor = "let cur of currency">
+<a [title]="cur.Pair + ' details'"
+[routerLink] = "['/currency', cur.Id]">
+{{ cur.Pair}} &nbsp; <br>
+</a> 
+
+<p *ngIf = "cur.Description">
+  {{cur.Description}}
+</p> 
+
+ <button type = "button" (click) = "Share()"> Share </button> 
+ <app-currencyalert [currency] = "cur" (notify) = "onNotify()"></app-currencyalert>
+  
+
+</div>

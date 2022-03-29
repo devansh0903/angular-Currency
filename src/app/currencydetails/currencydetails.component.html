@@ -1,0 +1,6 @@
+<h2> Currency Details </h2>
+<div *ngIf = "currency">
+<h3>{{ currency.Pair }}</h3>
+<h4>{{ currency.Buy_Price | currency }}</h4>
+<p>{{ currency.Description }}</p>
+</div>
