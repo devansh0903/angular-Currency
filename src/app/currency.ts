@@ -10,14 +10,14 @@ Description: string;
 export const currency = [
   {
   Id: 1,
-  Pair: 'USD/CAD',
+  Pair: "USD/CAD",
   Buy_Price: 3.29,
   Sell_Price: 3.35,
   Description: " US Dollars to Canadian Dollar"
   },
   {
   Id: 2,
-  Pair: 'USD/AUD',
+  Pair: "USD/AUD",
   Buy_Price: 3.56,
   Sell_Price: 3.65,
   Description: "US Dollars to Australian Dollar"
@@ -26,7 +26,7 @@ export const currency = [
 
   {
     Id: 3,
-    Pair: 'USD/JPY',
+    Pair: "USD/JPY",
     Buy_Price: 5.85,
     Sell_Price: 6.22,
     Description: "US Dollars to Japanese Yen"
@@ -34,11 +34,12 @@ export const currency = [
     },
     {
       Id: 4,
-      Pair: 'USD/INR',
-      Buy_Price: 74,
-      Sell_Price: 78,
-      Descritpion: "US Dollars to Indian Rupee"
-    },
+      Pair: "USD/INR",
+      Buy_Price: 6.77,
+      Sell_Price: 5.33,
+      Description: "US Dollars to Indian Rupees"
+    }
+    
 
   ];
 
