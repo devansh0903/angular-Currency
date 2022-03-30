@@ -12,14 +12,16 @@ import { CurrencylistComponent } from './currencylist/currencylist.component';
 import { CurrencydetailsComponent } from './currencydetails/currencydetails.component';
 import { CurrencyalertComponent } from './currencyalert/currencyalert.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { CurcartComponent } from './curcart/curcart.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule,
   RouterModule.forRoot([
     { path : '', component: CurrencylistComponent},
-    {path : 'currency/:currencyId', component: CurrencydetailsComponent}
+    {path : 'currency/:currencyId', component: CurrencydetailsComponent},
+    {path : 'curcart', component: CurcartComponent}
 ])],
-  declarations: [ AppComponent,CurrencylistComponent,CurrencydetailsComponent, CurrencyalertComponent,TopBarComponent ],
+  declarations: [ AppComponent,CurrencylistComponent,CurrencydetailsComponent, CurrencyalertComponent,TopBarComponent,CurcartComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
