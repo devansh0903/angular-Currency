@@ -1,0 +1,6 @@
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let cur of currency">
+  <span>{{ cur.Pair }}</span>
+  <span>{{ cur.Buy_Price | currency }}</span>
+</div>

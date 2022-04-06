@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Currency, currency} from '../currency';
-import { CurrencycartService } from '../currencycart.service';
+// import { CurrencycartService } from '../currencycart.service';
 
 @Component({
   selector: 'app-currencydetails',
@@ -14,14 +14,14 @@ export class CurrencydetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private cartService: CurrencycartService
+    // private cartService: CurrencycartService
     ) { }
 
 
-    addToCart(currency: Currency) {
-      this.cartService.addToCart(currency);
-      window.alert('Your product has been added to the cart!');
-    }
+    // addToCart(currency: Currency) {
+    //   this.cartService.addToCart(currency);
+    //   window.alert('Your product has been added to the cart!');
+    // }
 
   ngOnInit(){
 
